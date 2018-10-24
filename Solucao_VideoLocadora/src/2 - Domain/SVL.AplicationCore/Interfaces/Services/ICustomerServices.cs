@@ -1,0 +1,49 @@
+﻿using SVL.AplicationCore.Domain;
+using System;
+using System.Collections.Generic;
+using System.Linq.Expressions;
+
+namespace SVL.AplicationCore.Interfaces.Services
+{
+    public interface ICustomerServices
+    {
+        /// <summary>
+        /// Adiciona os registros da Entity passada como parâmetro
+        /// </summary>
+        /// <param name="entity"></param>
+        /// <returns></returns>
+        Customer Add(Customer entity);
+
+        /// <summary>
+        /// Altera as informações da Entity passada como parâmetro
+        /// </summary>
+        /// <param name="entity"></param>
+        void Update(Customer entity);
+
+        /// <summary>
+        /// Retorna todas as informações da Entity
+        /// </summary>
+        /// <returns></returns>
+        IEnumerable<Customer> GetAll();
+
+        /// <summary>
+        /// Retorna toda as informações da Entity filtrando pelo ID
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
+        Customer GetId(int id);
+
+        /// <summary>
+        /// Retorna todas as informações da Entity conforme filtro passado
+        /// </summary>
+        /// <param name="predicado"></param>
+        /// <returns></returns>
+        IEnumerable<Customer> GetBy(Expression<Func<Customer, bool>> predicado);
+
+        /// <summary>
+        /// Exclui as informações da Entity passada como parâmetro
+        /// </summary>
+        /// <param name="entity"></param>
+        void Delete(Customer entity);
+    }
+}
