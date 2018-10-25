@@ -5,7 +5,7 @@ VisualStudioVersion = 15.0.28010.2036
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VideoLocadora", "VideoLocadora\VideoLocadora.csproj", "{A0CA54DB-2AA9-4C52-BDAF-39AD8EDF5610}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SVL.AplicationCore", "src\2 - Domain\SVL.AplicationCore\SVL.AplicationCore.csproj", "{940EBDB5-2D29-4690-9B57-08D6EF3B662F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SVL.Location.Domain", "src\2 - Domain\SVL.AplicationCore\SVL.Location.Domain.csproj", "{940EBDB5-2D29-4690-9B57-08D6EF3B662F}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - UI", "1 - UI", "{794AE033-54D3-4A60-915B-BB85AB006F53}"
 EndProject
@@ -17,13 +17,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5 - Test", "5 - Test", "{BB
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SVL.Infra", "src\3 - Infra\SVL.Infra\SVL.Infra.csproj", "{0A40500B-8DAD-476E-8A79-34DA6BE85571}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.1 - CrossCuting", "4.1 - CrossCuting", "{31E5ED7B-6F2E-4F6A-917E-63829510B7EF}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - Service", "3 - Service", "{B1C7F519-BBBC-401E-B8D7-943C66CD70F6}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SVL.Service", "src\4 - Service\SVL.Serrvice\SVL.Service.csproj", "{02EA289A-5BAC-4A7B-93AA-1C8FF9CFBA94}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SVL.XUnitTest", "src\5 - Test\SVL.XUnitTest\SVL.XUnitTest.csproj", "{A9927852-63D0-4D79-9888-2B45F1EA1C79}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Devolution.Tests", "src\5 - Test\SVL.XUnitTest\Devolution.Tests.csproj", "{A9927852-63D0-4D79-9888-2B45F1EA1C79}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Location.Tests", "src\5 - Test\Domain.Location.Tests\Location.Tests.csproj", "{F70A009F-1ABB-48FA-95A6-98625B86830C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SVL.Devolution.Domain", "src\2 - Domain\SVL.Devolution.Domain\SVL.Devolution.Domain.csproj", "{4D3104AB-0F8E-4EE7-9C1E-8AF43C4250A6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,14 @@ Global
 		{A9927852-63D0-4D79-9888-2B45F1EA1C79}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A9927852-63D0-4D79-9888-2B45F1EA1C79}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A9927852-63D0-4D79-9888-2B45F1EA1C79}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F70A009F-1ABB-48FA-95A6-98625B86830C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F70A009F-1ABB-48FA-95A6-98625B86830C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F70A009F-1ABB-48FA-95A6-98625B86830C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F70A009F-1ABB-48FA-95A6-98625B86830C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4D3104AB-0F8E-4EE7-9C1E-8AF43C4250A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D3104AB-0F8E-4EE7-9C1E-8AF43C4250A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D3104AB-0F8E-4EE7-9C1E-8AF43C4250A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D3104AB-0F8E-4EE7-9C1E-8AF43C4250A6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -61,6 +71,8 @@ Global
 		{0A40500B-8DAD-476E-8A79-34DA6BE85571} = {5168941D-E34F-4E81-A04C-EC1BCCC61A5A}
 		{02EA289A-5BAC-4A7B-93AA-1C8FF9CFBA94} = {B1C7F519-BBBC-401E-B8D7-943C66CD70F6}
 		{A9927852-63D0-4D79-9888-2B45F1EA1C79} = {BB339D5D-B0E3-4619-A575-6E3D077D6722}
+		{F70A009F-1ABB-48FA-95A6-98625B86830C} = {BB339D5D-B0E3-4619-A575-6E3D077D6722}
+		{4D3104AB-0F8E-4EE7-9C1E-8AF43C4250A6} = {23815E6D-2C95-4344-92EA-552E1988936E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {62CCEC0D-9A4A-48D2-B57B-A10C98ED2EC6}

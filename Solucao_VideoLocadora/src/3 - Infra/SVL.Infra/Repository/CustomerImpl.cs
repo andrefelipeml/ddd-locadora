@@ -6,7 +6,7 @@ using System.Collections.Generic;
 using System.Linq;
 
 /// <summary>
-/// Repositorio especializado, herda de EFRepository
+/// Repositorio especializado, herda de EFRepository que implementa efetivamente as operações no banco de dados
 /// Implementa Interface ICustomerRepository
 /// Caso queira criar um metodo especializado esta seria a classe
 /// </summary>
@@ -19,6 +19,16 @@ namespace SVL.Infra.Repository
 
         }
 
+        /// <summary>
+        /// É nesta classe que podemos mudar o comportamento das regras padrões do Sistema
+        /// usando o override por exemplo = polimorfismo
+        /// </summary>
+        /// <param name="entity"></param>
+        /// <returns></returns>
+        public override Customer Add(Customer entity)
+        {
+            return base.Add(entity);
+        }
         /// <summary>
         /// Implementando Classe especializada de Cliente
         /// </summary>

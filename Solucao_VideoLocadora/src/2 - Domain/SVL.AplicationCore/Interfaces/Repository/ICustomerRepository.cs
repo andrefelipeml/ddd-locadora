@@ -3,6 +3,7 @@ using System.Collections.Generic;
 
 /// <summary>
 /// Interface Customer que herda de IRepository genérico
+/// Chama sua Implementação CustomerImpl
 /// Segregando a informação 
 /// </summary>
 namespace SVL.AplicationCore.Interfaces.Repository

@@ -1,5 +1,4 @@
-﻿using Microsoft.AspNetCore.Authentication;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using SVL.AplicationCore.Interfaces.Repository;
 using SVL.Infra.Data;
 using System;
@@ -9,6 +8,7 @@ using System.Linq.Expressions;
 using System.Text;
 
 /// <summary>
+/// Classe que conversa com banco de dados
 /// Classe Genérica responsável pelas Operações de CRUD
 /// Implementa Interface IRepository
 /// Desta forma nossa aplicação fica desacoplada - podemos implementar outros repository para outros padrões

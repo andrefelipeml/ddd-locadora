@@ -1,7 +1,7 @@
 using System;
 using Xunit;
 
-namespace SVL.XUnitTest
+namespace Domain.Location.Tests
 {
     public class UnitTest1
     {

@@ -4,6 +4,10 @@ using System;
 
 namespace Modelo.Service.Validators
 {
+    /// <summary>
+    /// Classe de Validação do Objeto Customer
+    /// Esta classe será usada pelo CRUD nas operações
+    /// </summary>
     public class CustomerValidator : AbstractValidator<Customer>
     {
         public CustomerValidator()

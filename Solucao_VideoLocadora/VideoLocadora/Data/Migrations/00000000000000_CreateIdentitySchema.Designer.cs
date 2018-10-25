@@ -87,7 +87,7 @@ namespace VideoLocadora.Data.Migrations
                     b.Property<string>("NormalizedEmail")
                         .HasMaxLength(256);
 
-                    b.Property<string>("NormalizedUserName")
+                    b.Property<string>("NormalizedCustomerName")
                         .HasMaxLength(256);
 
                     b.Property<string>("PasswordHash");
@@ -100,7 +100,7 @@ namespace VideoLocadora.Data.Migrations
 
                     b.Property<bool>("TwoFactorEnabled");
 
-                    b.Property<string>("UserName")
+                    b.Property<string>("CustomerName")
                         .HasMaxLength(256);
 
                     b.HasKey("Id");
@@ -108,12 +108,12 @@ namespace VideoLocadora.Data.Migrations
                     b.HasIndex("NormalizedEmail")
                         .HasName("EmailIndex");
 
-                    b.HasIndex("NormalizedUserName")
+                    b.HasIndex("NormalizedCustomerName")
                         .IsUnique()
-                        .HasName("UserNameIndex")
-                        .HasFilter("[NormalizedUserName] IS NOT NULL");
+                        .HasName("CustomerNameIndex")
+                        .HasFilter("[NormalizedCustomerName] IS NOT NULL");
 
-                    b.ToTable("AspNetUsers");
+                    b.ToTable("AspNetCustomers");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserClaim<string>", b =>
@@ -126,14 +126,14 @@ namespace VideoLocadora.Data.Migrations
 
                     b.Property<string>("ClaimValue");
 
-                    b.Property<string>("UserId")
+                    b.Property<string>("CustomerId")
                         .IsRequired();
 
                     b.HasKey("Id");
 
-                    b.HasIndex("UserId");
+                    b.HasIndex("CustomerId");
 
-                    b.ToTable("AspNetUserClaims");
+                    b.ToTable("AspNetCustomerClaims");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserLogin<string>", b =>
@@ -146,32 +146,32 @@ namespace VideoLocadora.Data.Migrations
 
                     b.Property<string>("ProviderDisplayName");
 
-                    b.Property<string>("UserId")
+                    b.Property<string>("CustomerId")
                         .IsRequired();
 
                     b.HasKey("LoginProvider", "ProviderKey");
 
-                    b.HasIndex("UserId");
+                    b.HasIndex("CustomerId");
 
-                    b.ToTable("AspNetUserLogins");
+                    b.ToTable("AspNetCustomerLogins");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserRole<string>", b =>
                 {
-                    b.Property<string>("UserId");
+                    b.Property<string>("CustomerId");
 
                     b.Property<string>("RoleId");
 
-                    b.HasKey("UserId", "RoleId");
+                    b.HasKey("CustomerId", "RoleId");
 
                     b.HasIndex("RoleId");
 
-                    b.ToTable("AspNetUserRoles");
+                    b.ToTable("AspNetCustomerRoles");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserToken<string>", b =>
                 {
-                    b.Property<string>("UserId");
+                    b.Property<string>("CustomerId");
 
                     b.Property<string>("LoginProvider")
                         .HasMaxLength(128);
@@ -181,9 +181,9 @@ namespace VideoLocadora.Data.Migrations
 
                     b.Property<string>("Value");
 
-                    b.HasKey("UserId", "LoginProvider", "Name");
+                    b.HasKey("CustomerId", "LoginProvider", "Name");
 
-                    b.ToTable("AspNetUserTokens");
+                    b.ToTable("AspNetCustomerTokens");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
@@ -198,7 +198,7 @@ namespace VideoLocadora.Data.Migrations
                 {
                     b.HasOne("Microsoft.AspNetCore.Identity.IdentityUser")
                         .WithMany()
-                        .HasForeignKey("UserId")
+                        .HasForeignKey("CustomerId")
                         .OnDelete(DeleteBehavior.Cascade);
                 });
 
@@ -206,7 +206,7 @@ namespace VideoLocadora.Data.Migrations
                 {
                     b.HasOne("Microsoft.AspNetCore.Identity.IdentityUser")
                         .WithMany()
-                        .HasForeignKey("UserId")
+                        .HasForeignKey("CustomerId")
                         .OnDelete(DeleteBehavior.Cascade);
                 });
 
@@ -219,7 +219,7 @@ namespace VideoLocadora.Data.Migrations
 
                     b.HasOne("Microsoft.AspNetCore.Identity.IdentityUser")
                         .WithMany()
-                        .HasForeignKey("UserId")
+                        .HasForeignKey("CustomerId")
                         .OnDelete(DeleteBehavior.Cascade);
                 });
 
@@ -227,7 +227,7 @@ namespace VideoLocadora.Data.Migrations
                 {
                     b.HasOne("Microsoft.AspNetCore.Identity.IdentityUser")
                         .WithMany()
-                        .HasForeignKey("UserId")
+                        .HasForeignKey("CustomerId")
                         .OnDelete(DeleteBehavior.Cascade);
                 });
 #pragma warning restore 612, 618

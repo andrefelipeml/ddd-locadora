@@ -7,6 +7,10 @@ using SVL.AplicationCore.Interfaces.Services;
 
 namespace SVL.Service.Services
 {
+    /// <summary>
+    /// Implementação dos Serviços de CRUD da Classe Customer
+    /// Chama a Interface ICustomerRepository para executar operações dos serviços solicitados
+    /// </summary>
     public class CustomerService : ICustomerServices
     {
         private readonly ICustomerRepository _CustomerRepository;

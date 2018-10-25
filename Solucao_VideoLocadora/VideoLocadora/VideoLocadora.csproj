@@ -14,4 +14,9 @@
     <Folder Include="Domain\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\src\2 - Domain\SVL.AplicationCore\SVL.Location.Domain.csproj" />
+    <ProjectReference Include="..\src\4 - Service\SVL.Serrvice\SVL.Service.csproj" />
+  </ItemGroup>
+
 </Project>

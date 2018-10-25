@@ -5,10 +5,15 @@ using System.Linq.Expressions;
 
 namespace SVL.AplicationCore.Interfaces.Services
 {
+    /// <summary>
+    /// Interface dos Serviços da Customer
+    /// Esta interface será usada pelo Controller para executar as Opderações solicitadas
+    /// Chama sua implementação CustomerService
+    /// </summary>
     public interface ICustomerServices
     {
         /// <summary>
-        /// Adiciona os registros da Entity passada como parâmetro
+        /// Adiciona os registros da Customer passada como parâmetro
         /// </summary>
         /// <param name="entity"></param>
         /// <returns></returns>
