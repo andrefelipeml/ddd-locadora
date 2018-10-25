@@ -1,7 +1,7 @@
 ﻿
 namespace SVL.AplicationCore.Domain
 {
-    public class Credits : BaseEntity
+    public class Wallet : BaseEntity
     {
         private Customer _customer;
         private int _creditPoints;
@@ -10,8 +10,6 @@ namespace SVL.AplicationCore.Domain
         /// Id do Cliente
         /// </summary>
         public int CustomerID { get; set; }
-
-        public virtual Customer Customer { get => _customer; set => _customer = value; }
 
         /// <summary>
         /// Total de Creditos do Cliente

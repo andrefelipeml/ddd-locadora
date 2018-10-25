@@ -24,17 +24,10 @@ namespace SVL.AplicationCore.Domain
         /// <summary>
         /// CEP
         /// </summary>
-        [Required(ErrorMessage = "O Cep é obrigatório", AllowEmptyStrings = false)]
-        [StringLength(15, ErrorMessage = "O CEP não pode ser maior que 15 caracteres.")]
-        [DataType(DataType.Text)]
-        [RegularExpression("^d{5}-d{3}$",
-        ErrorMessage = "Cep Inválido, favor verificar.")]
         public string Cep { get => _cep; set => _cep = value; }
         /// <summary>
         /// Descrição Rua
         /// </summary>
-        [Required(ErrorMessage = "Descrição do Logradouro é obrigatório", AllowEmptyStrings = false)]
-        [StringLength(150, ErrorMessage = "O Logradouro não pode ser maior que 150 caracteres.")]
         public string StreetDescription { get => _streetDescription; set => _streetDescription = value; }
         /// <summary>
         /// bairro

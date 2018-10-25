@@ -9,6 +9,7 @@ namespace SVL.AplicationCore.Domain
         private float _valueLocation;
         private Customer _customer;
         private ICollection<Media> _medias;
+        private bool _isFinished;
 
         /// <summary>
         /// Data de Locação
@@ -23,13 +24,16 @@ namespace SVL.AplicationCore.Domain
         /// <summary>
         /// Cliente da Locação
         /// </summary>
-        public int CustomerID { get; set; }
-        public virtual Customer Customer { get => _customer; set => _customer = value; }
+        public Customer Customer { get => _customer; set => _customer = value; }
         /// <summary>
-        ///  Significa que a Locação pode ter uma lista de Filmes
+        ///  Significa que a Locação pode ter uma lista de VHF
         /// </summary>
-        public ICollection<Media> Contatos { get => _medias; set => _medias = value; }
+        public ICollection<Media> medias { get => _medias; set => _medias = value; }
 
+        /// <summary>
+        /// Identifica se a Locação esta finalizada
+        /// </summary>
+        public Boolean IsFinished { get => _isFinished; set => _isFinished = value; }
 
     }
 }

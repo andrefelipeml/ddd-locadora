@@ -18,7 +18,7 @@ namespace SVL.Infra.Data
         public DbSet<Contato> contatos { get; set;  }
         public DbSet<Media> medias { get; set; }
         public DbSet<Country> countries { get; set; }
-        public DbSet<Credits> credits { get; set; }
+        public DbSet<Wallet> credits { get; set; }
         public DbSet<MediaLocation> mediaLocations { get; set; }
 
 
@@ -33,7 +33,7 @@ namespace SVL.Infra.Data
             modelBuilder.Entity<Devolution>().ToTable("Devolution");
             modelBuilder.Entity<Media>().ToTable("Media");
             modelBuilder.Entity<Contato>().ToTable("Contato");
-            modelBuilder.Entity<Credits>().ToTable("Credit");
+            modelBuilder.Entity<Wallet>().ToTable("Credit");
             modelBuilder.Entity<Country>().ToTable("Country");
             modelBuilder.Entity<Address>().ToTable("Address");
 
