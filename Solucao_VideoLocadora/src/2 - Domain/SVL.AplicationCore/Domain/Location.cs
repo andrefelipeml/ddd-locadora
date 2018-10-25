@@ -6,34 +6,29 @@ namespace SVL.AplicationCore.Domain
     public class Location : BaseEntity
     {
         private DateTime _date;
-        private float _valueLocation;
-        private Customer _customer;
+        private float _value;
+        private int _customerId;
         private ICollection<Media> _medias;
-        private bool _isFinished;
+        
 
         /// <summary>
         /// Data de Locação
         /// </summary>
-        DateTime DateLocation { get => _date; set => _date = value; }
+        DateTime Date { get => _date; set => _date = value; }
 
         /// <summary>
         /// Valor da Locação
         /// </summary>
-        float ValueLocation { get => _valueLocation; set => _valueLocation = value; }
+        float Value { get => _value; set => _value = value; }
 
         /// <summary>
         /// Cliente da Locação
         /// </summary>
-        public Customer Customer { get => _customer; set => _customer = value; }
+        public int CustomerId { get => _customerId; set => _customerId = value; }
         /// <summary>
         ///  Significa que a Locação pode ter uma lista de VHF
         /// </summary>
         public ICollection<Media> medias { get => _medias; set => _medias = value; }
-
-        /// <summary>
-        /// Identifica se a Locação esta finalizada
-        /// </summary>
-        public Boolean IsFinished { get => _isFinished; set => _isFinished = value; }
 
     }
 }

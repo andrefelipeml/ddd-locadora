@@ -6,7 +6,7 @@ namespace SVL.AplicationCore.Domain
 
     public abstract class BaseEntity
     {
-        private int _iD;
+        private readonly int _iD;
 
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
