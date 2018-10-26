@@ -31,9 +31,6 @@ namespace SVL.Infra.DomainConfig
                 .Property(c => c.Cpf).HasColumnType("varchar(11)")
                 .IsRequired();
 
-            builder
-                .Property(c => c.Sexo).IsRequired();
-
 
 
         }

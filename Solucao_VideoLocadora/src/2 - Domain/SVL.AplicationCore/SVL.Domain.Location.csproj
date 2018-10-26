@@ -6,7 +6,7 @@
 
   <ItemGroup>
     <Folder Include="Interfaces\Repository\" />
-    <Folder Include="Interfaces\Services\" />
+    <Folder Include="Interfaces\Services\Services\" />
   </ItemGroup>
 
   <ItemGroup>

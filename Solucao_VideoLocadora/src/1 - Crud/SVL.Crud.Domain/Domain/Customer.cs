@@ -15,16 +15,11 @@ namespace SVL.Domain.Base
         private string _cpf;
         private ICollection<Contato> _contatos;
         private ICollection<Address> _addresses;
-        private SEXO _sexo;
 
         /// <summary>
         /// CPF
         /// </summary>
         public string Cpf { get => _cpf; set => _cpf = value; }
-        /// <summary>
-        /// Sexo
-        /// </summary>
-        public SEXO Sexo { get => _sexo; set => _sexo = value; }
 
         /// <summary>
         ///  Significa que o Cliente pode ter uma lista de Contatos

@@ -29,6 +29,6 @@ namespace SVL.Domain.Location
         ///  Significa que a Locação pode ter uma lista de VHF
         /// </summary>
         public ICollection<Media> medias { get => _medias; set => _medias = value; }
-
+        
     }
 }
