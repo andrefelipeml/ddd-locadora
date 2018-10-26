@@ -4,7 +4,6 @@ namespace SVL.Domain.Location
 {
     public class Wallet : BaseEntity
     {
-        private Customer _customer;
         private int _creditPoints;
 
         /// <summary>

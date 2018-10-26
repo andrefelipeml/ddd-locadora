@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace SVL.Domain.Location
 {
-    public class Location : BaseEntity
+    public class LocationMedia : BaseEntity
     {
         private DateTime _date;
         private float _value;

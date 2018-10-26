@@ -15,7 +15,7 @@ namespace SVL.Infra.Data
 
         public DbSet<Address> addresses { get; set; }
         public DbSet<Customer> customers { get; set; }
-        public DbSet<Location> locations { get; set; }
+        public DbSet<LocationMedia> locations { get; set; }
         public DbSet<Devolution> devolutions { get; set; }
         public DbSet<Contato> contatos { get; set; }
         public DbSet<Media> medias { get; set; }
@@ -29,7 +29,7 @@ namespace SVL.Infra.Data
         /// <param name="modelBuilder"></param>
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<Location>().ToTable("Location");
+            modelBuilder.Entity<LocationMedia>().ToTable("Location");
             modelBuilder.Entity<Customer>().ToTable("Customer");
             modelBuilder.Entity<Devolution>().ToTable("Devolution");
             modelBuilder.Entity<Media>().ToTable("Media");

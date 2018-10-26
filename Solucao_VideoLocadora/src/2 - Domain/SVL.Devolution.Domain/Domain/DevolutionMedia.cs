@@ -3,7 +3,7 @@ using System;
 
 namespace SVL.Domain.Devolution
 {
-    public class Media : BaseEntity
+    public class DevolutionMedia : BaseEntity
     {
         private DateTime _date;
 

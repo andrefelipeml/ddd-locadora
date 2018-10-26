@@ -8,7 +8,8 @@ namespace SVL.Domain.Devolution
     {
         private int _locationId;
         private int _customerId;
-        private ICollection<AplicationCore.Domain.Media> _medias;
+        private ICollection<DevolutionMedia> _medias;
+        private Boolean _isFinished;
 
         /// <summary>
         /// ID da Locação 
@@ -22,9 +23,9 @@ namespace SVL.Domain.Devolution
         public Boolean IsFinished { get => _isFinished; set => _isFinished = value; }
 
 
-        public ICollection<AplicationCore.Domain.Media>  Medias { get => _medias; set => _medias = value; } 
+        public ICollection<DevolutionMedia>  Medias { get => _medias; set => _medias = value; } 
 
-        private void ReturnMedia(AplicationCore.Domain.Media media) { }
+        private void ReturnMedia(DevolutionMedia media) { }
 
         private void IsComplete() { }
     }

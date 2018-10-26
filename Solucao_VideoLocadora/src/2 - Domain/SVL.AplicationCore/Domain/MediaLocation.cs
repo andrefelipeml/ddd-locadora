@@ -7,7 +7,7 @@ namespace SVL.Domain.Location
     {
         private DateTime _date;
         private float _pointsLocation;
-        private Location _location;
+        private LocationMedia _location;
         private bool _isRelease;
 
         /// <summary>
@@ -28,7 +28,7 @@ namespace SVL.Domain.Location
         /// Relacionamento com a Locação
         /// </summary>
         public int LocationID { get; set; }
-        public virtual Location Location { get => _location; set => _location = value; }
+        public virtual LocationMedia Location { get => _location; set => _location = value; }
 
     }
 }
