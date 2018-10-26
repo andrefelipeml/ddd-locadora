@@ -1,8 +1,7 @@
-﻿using SVL.AplicationCore.Interfaces.Repository;
+﻿using SVL.Base.Domain.Interfaces.Repository;
 using System;
 using System.Collections.Generic;
 using System.Linq.Expressions;
-using System.Text;
 
 /// <summary>
 /// Classe não implementada: Somente como exemplo, mostrando que podemos ter N 

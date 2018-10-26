@@ -1,8 +1,8 @@
-﻿using SVL.AplicationCore.Domain;
+﻿using SVL.Domain.Base;
 using System;
 using System.Collections.Generic;
 
-namespace SVL.Devolution.Domain
+namespace SVL.Domain.Devolution
 {
     public class Devolution : BaseEntity
     {

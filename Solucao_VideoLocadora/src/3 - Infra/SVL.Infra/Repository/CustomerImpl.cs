@@ -1,6 +1,6 @@
-﻿using SVL.AplicationCore.Interfaces.Repository;
-using SVL.AplicationCore.Repository;
-using SVL.AplicationCore.Domain;
+﻿using SVL.AplicationCore.Repository;
+using SVL.Base.Domain.Interfaces.Repository;
+using SVL.Domain.Base;
 using SVL.Infra.Data;
 using System.Collections.Generic;
 using System.Linq;

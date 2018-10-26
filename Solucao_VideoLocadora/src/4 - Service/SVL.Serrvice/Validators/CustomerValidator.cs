@@ -1,5 +1,5 @@
 ﻿using FluentValidation;
-using SVL.AplicationCore.Domain;
+using SVL.Domain.Base;
 using System;
 
 namespace Modelo.Service.Validators

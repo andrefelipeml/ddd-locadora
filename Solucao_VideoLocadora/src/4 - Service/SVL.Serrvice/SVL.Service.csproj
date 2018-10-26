@@ -9,7 +9,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\2 - Domain\SVL.AplicationCore\SVL.Location.Domain.csproj" />
+    <ProjectReference Include="..\..\2 - Domain\SVL.AplicationCore\SVL.Domain.Location.csproj" />
     <ProjectReference Include="..\..\3 - Infra\SVL.Infra\SVL.Infra.csproj" />
   </ItemGroup>
 

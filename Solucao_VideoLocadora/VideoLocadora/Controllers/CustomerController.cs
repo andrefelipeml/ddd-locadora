@@ -2,7 +2,7 @@
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Modelo.Service.Validators;
-using SVL.AplicationCore.Domain;
+using SVL.Domain.Location;
 using SVL.AplicationCore.Interfaces.Repository;
 using SVL.AplicationCore.Interfaces.Services;
 using SVL.Service.Services;

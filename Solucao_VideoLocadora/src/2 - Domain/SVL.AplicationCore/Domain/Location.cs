@@ -1,15 +1,15 @@
-﻿using System;
+﻿using SVL.Domain.Base;
+using System;
 using System.Collections.Generic;
 
-namespace SVL.AplicationCore.Domain
+namespace SVL.Domain.Location
 {
     public class Location : BaseEntity
     {
         private DateTime _date;
         private float _value;
         private int _customerId;
-        private ICollection<Media> _medias;
-        
+        private ICollection<Media> _medias;       
 
         /// <summary>
         /// Data de Locação

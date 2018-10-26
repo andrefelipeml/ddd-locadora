@@ -1,6 +1,7 @@
-﻿using System;
+﻿using SVL.Domain.Base;
+using System;
 
-namespace SVL.AplicationCore.Domain
+namespace SVL.Domain.Location
 {
     public class MediaLocation : BaseEntity
     {

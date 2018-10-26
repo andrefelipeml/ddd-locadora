@@ -1,12 +1,12 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace SVL.AplicationCore.Domain
+namespace SVL.Domain.Base
 {
 
     public abstract class BaseEntity
     {
-        private readonly int _iD;
+        private int _iD;
 
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]

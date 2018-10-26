@@ -1,7 +1,8 @@
-﻿using SVL.AplicationCore.Domain.Enum;
+﻿using SVL.Domain.Base;
+using SVL.Domain.Base.Domain.Enum;
 using System;
 
-namespace SVL.AplicationCore.Domain
+namespace SVL.Domain.Location
 {
 
     public class Media : BaseEntity

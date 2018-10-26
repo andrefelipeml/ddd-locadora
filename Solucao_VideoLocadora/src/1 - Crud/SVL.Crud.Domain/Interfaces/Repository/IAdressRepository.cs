@@ -1,7 +1,5 @@
 ﻿
-using SVL.AplicationCore.Domain;
-
-namespace  SVL.AplicationCore.Interfaces.Repository
+namespace SVL.Base.Domain.Interfaces.Repository
 {
     public interface IAdressRepository : IRepository<Address>
     {

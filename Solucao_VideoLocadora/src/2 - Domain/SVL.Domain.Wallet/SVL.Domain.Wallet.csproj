@@ -5,7 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\SVL.AplicationCore\SVL.Location.Domain.csproj" />
+    <ProjectReference Include="..\..\1 - Crud\SVL.Crud.Domain\SVL.Domain.Base.csproj" />
   </ItemGroup>
 
 </Project>

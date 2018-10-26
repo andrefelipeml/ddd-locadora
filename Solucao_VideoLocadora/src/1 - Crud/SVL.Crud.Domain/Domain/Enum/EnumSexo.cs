@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace SVL.AplicationCore.Domain.Enum
+namespace SVL.Domain.Base.Domain.Enum
 {
     public enum SEXO
     {

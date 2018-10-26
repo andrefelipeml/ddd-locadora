@@ -1,7 +1,7 @@
-﻿using SVL.AplicationCore.Domain;
+﻿using SVL.Domain.Base;
 using System;
 
-namespace SVL.Devolution.Domain
+namespace SVL.Domain.Devolution
 {
     public class Media : BaseEntity
     {

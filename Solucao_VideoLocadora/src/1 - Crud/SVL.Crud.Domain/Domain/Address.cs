@@ -1,8 +1,8 @@
-﻿using SVL.AplicationCore.Domain.Enum;
+﻿using SVL.Domain.Base.Domain.Enum;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace SVL.AplicationCore.Domain
+namespace SVL.Domain.Base
 {
     /// <summary>
     ///     bairro: "Tijuca",

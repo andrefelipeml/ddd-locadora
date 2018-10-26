@@ -1,4 +1,4 @@
-﻿using SVL.AplicationCore.Domain;
+﻿using SVL.Domain.Base;
 using System.Collections.Generic;
 
 /// <summary>
@@ -6,7 +6,7 @@ using System.Collections.Generic;
 /// Chama sua Implementação CustomerImpl
 /// Segregando a informação 
 /// </summary>
-namespace SVL.AplicationCore.Interfaces.Repository
+namespace SVL.Base.Domain.Interfaces.Repository
 {
     /// <summary>
     /// ICustomerRepository implementa IRepository

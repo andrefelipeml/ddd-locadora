@@ -1,9 +1,8 @@
-﻿using SVL.AplicationCore.Domain;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq.Expressions;
 
-namespace SVL.AplicationCore.Interfaces.Services
+namespace SVL.Domain.Base.Interfaces.Services
 {
     /// <summary>
     /// Interface dos Serviços da Customer

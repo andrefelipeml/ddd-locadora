@@ -1,7 +1,7 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace SVL.AplicationCore.Domain
+namespace SVL.Domain.Base
 {
     public class Contato : BaseEntity
     {

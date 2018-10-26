@@ -1,4 +1,4 @@
-﻿using SVL.AplicationCore.Domain;
+﻿using SVL.Domain.Location;
 using System;
 using System.Collections.Generic;
 using System.Text;

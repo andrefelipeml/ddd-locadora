@@ -1,4 +1,4 @@
-﻿using SVL.AplicationCore.Domain;
+﻿using SVL.Domain.Location;
 using SVL.Ticketing.Domain.Services;
 using System;
 

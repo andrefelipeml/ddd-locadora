@@ -5,7 +5,7 @@ using System.Linq.Expressions;
 /// <summary>
 /// Interface Genérica: Responsável pelas chamadas das Operações de CRUD
 /// </summary>
-namespace SVL.AplicationCore.Interfaces.Repository
+namespace SVL.Base.Domain.Interfaces.Repository
 {
     public interface IRepository<T> where T : class
     {

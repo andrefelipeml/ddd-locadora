@@ -1,5 +1,6 @@
-﻿
-namespace SVL.AplicationCore.Domain
+﻿using SVL.Domain.Base;
+
+namespace SVL.Domain.Location
 {
     public class Wallet : BaseEntity
     {

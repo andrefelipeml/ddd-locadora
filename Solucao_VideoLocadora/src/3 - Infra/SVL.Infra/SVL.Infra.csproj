@@ -22,7 +22,11 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\2 - Domain\SVL.AplicationCore\SVL.Location.Domain.csproj" />
+    <ProjectReference Include="..\..\1 - Crud\SVL.Crud.Domain\SVL.Domain.Base.csproj" />
+    <ProjectReference Include="..\..\2 - Domain\SVL.AplicationCore\SVL.Domain.Location.csproj" />
+    <ProjectReference Include="..\..\2 - Domain\SVL.Devolution.Domain\SVL.Domain.Devolution.csproj" />
+    <ProjectReference Include="..\..\2 - Domain\SVL.Domain.Wallet\SVL.Domain.Wallet.csproj" />
+    <ProjectReference Include="..\..\2 - Domain\SVL.Ticheting.Domain\SVL.Domain.Ticketing.csproj" />
   </ItemGroup>
 
 </Project>

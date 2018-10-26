@@ -1,11 +1,10 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using SVL.AplicationCore.Interfaces.Repository;
+using SVL.Base.Domain.Interfaces.Repository;
 using SVL.Infra.Data;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
-using System.Text;
 
 /// <summary>
 /// Classe que conversa com banco de dados

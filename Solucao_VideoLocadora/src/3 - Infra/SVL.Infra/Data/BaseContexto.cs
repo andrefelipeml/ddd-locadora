@@ -1,5 +1,7 @@
 using Microsoft.EntityFrameworkCore;
-using SVL.AplicationCore.Domain;
+using SVL.Domain.Base;
+using SVL.Domain.Devolution;
+using SVL.Domain.Location;
 using SVL.Infra.DomainConfig;
 
 namespace SVL.Infra.Data
@@ -14,10 +16,9 @@ namespace SVL.Infra.Data
         public DbSet<Address> addresses { get; set; }
         public DbSet<Customer> customers { get; set; }
         public DbSet<Location> locations { get; set; }
-        public DbSet<Devolution> devolutions { get; set;  }
-        public DbSet<Contato> contatos { get; set;  }
+        public DbSet<Devolution> devolutions { get; set; }
+        public DbSet<Contato> contatos { get; set; }
         public DbSet<Media> medias { get; set; }
-        public DbSet<Country> countries { get; set; }
         public DbSet<Wallet> credits { get; set; }
         public DbSet<MediaLocation> mediaLocations { get; set; }
 
@@ -34,7 +35,6 @@ namespace SVL.Infra.Data
             modelBuilder.Entity<Media>().ToTable("Media");
             modelBuilder.Entity<Contato>().ToTable("Contato");
             modelBuilder.Entity<Wallet>().ToTable("Credit");
-            modelBuilder.Entity<Country>().ToTable("Country");
             modelBuilder.Entity<Address>().ToTable("Address");
 
             /* Classe que contém as configurações do Customer */

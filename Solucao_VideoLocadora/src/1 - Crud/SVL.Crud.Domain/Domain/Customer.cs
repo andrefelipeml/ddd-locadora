@@ -1,8 +1,8 @@
-using SVL.AplicationCore.Domain.Enum;
+using SVL.Domain.Base.Domain.Enum;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
-namespace SVL.AplicationCore.Domain
+namespace SVL.Domain.Base
 {
 
     public class Customer : Person

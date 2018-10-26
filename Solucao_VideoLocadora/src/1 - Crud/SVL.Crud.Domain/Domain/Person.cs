@@ -1,6 +1,6 @@
 using System;
 
-namespace SVL.AplicationCore.Domain
+namespace SVL.Domain.Base
 {
     public abstract class Person : BaseEntity
     {

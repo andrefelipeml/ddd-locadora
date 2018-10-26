@@ -1,9 +1,9 @@
-﻿using System;
+﻿using SVL.Base.Domain.Interfaces.Repository;
+using SVL.Domain.Base;
+using SVL.Domain.Base.Interfaces.Services;
+using System;
 using System.Collections.Generic;
 using System.Linq.Expressions;
-using SVL.AplicationCore.Domain;
-using SVL.AplicationCore.Interfaces.Repository;
-using SVL.AplicationCore.Interfaces.Services;
 
 namespace SVL.Service.Services
 {
